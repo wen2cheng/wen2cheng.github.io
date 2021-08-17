@@ -1,1 +1,53 @@
-Hello World
+<!--
+ * @Author: wencheng
+ * @Date: 2021-08-17 12:28:36
+ * @LastEditors: wencheng
+ * @LastEditTime: 2021-08-17 14:06:29
+ * @Description: 
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio samples from "KeSpeech: A Multipurpose Speech Dataset of Mandarin and Its Eight Subdialects"</title>
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
+    <link rel="shortcut icon" href="../../images/taco.png">
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Audio samples from "KeSpeech: A Multipurpose Speech Dataset of Mandarin and Its Eight Subdialects"</h1>
+      </header>
+    </article>
+    <div><b>Paper: </b><a href="https://arxiv.org/abs/2010.09275">arXiv</a></div>
+    <div><b>Authors:</b> Tingwei Guo, Cheng Wen, DongWei Jiang, Ne Luo, RuiXiong Zhang, ShuaiJiang Zhao, WuBo Li, Cheng Gong, Wei Zou, Kun Han, XianGang Li</div>
+    <div><b>Abstract:</b> This paper introduces a new open-sourced Mandarin speech corpus, called DiDiSpeech. It consists of about 800 hours of speech data at 48kHz sampling rate from 6000 speakers and the corresponding texts. All speech data in the corpus was recorded in quiet environment and is suitable for various speech processing tasks, such as voice conversion, multi-speaker text-to-speech and aucomatic speech recognation. We conduct experiments with multiple speech tasks and evaluate the performance, showing that it is promising to use the corpus for both academic research and practical application. The corpus is available at https://outreach.didichuxing.com/research/opendata/.<br/><br/>
+    </div>
+    <div> For more information, refer to the paper "DiDiSpeech: A Large Scale Mandarin Speech Corpus", Tingwei Guo, Cheng Wen, Dongwei Jiang, Ne Luo, Ruixiong Zhang, Shuaijiang Zhao, Wubo Li, Cheng Gong, Wei Zou, Kun Han, Xiangang Li, arXiv:2010.09275, 2020. If you use the DiDiSpeech corpus in your work, please cite this paper where it was introduced.</div>
+
+    <h2>Voice conversion</h2>
+    <div>Audio samples of both the parallel and non-parallel voice conversion (VC) models trained on the DiDiSpeech corpus are provided here. In the rest of this section, the source and target audio, which has been separated from the training data, is the speech samples recorded from source and target speakers respectively. The converted audio is the speech samples converted from the source audio in the same line by using our VC models.</div>
+    <h3>1、Parallel VC</h3>
+    <blockquote>
+      <table>
+        <tr>
+          <td align=center width=200></td><td align=center width=200>Source audio</td><td align=center width=200>Target audio</td><td align=center width=200>Converted audio</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300>Inter-gender sample (Female)</td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.01.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.01.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.01.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> </td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.01.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.01.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.01.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+      </table>
+    </blockquote>
+    <h3>2、Non-parallel VC</h3>
+  </body>
+</html>
