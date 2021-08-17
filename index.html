@@ -2,7 +2,7 @@
  * @Author: wencheng
  * @Date: 2021-08-17 12:28:36
  * @LastEditors: wencheng
- * @LastEditTime: 2021-08-17 15:07:53
+ * @LastEditTime: 2021-08-17 15:28:37
  * @Description: 
 -->
 <html>
@@ -25,7 +25,7 @@
       Moreover, some of the text samples are parallel recorded with both standard Chinese and a subdialect, allowing for learning dialect style conversion, and there is certain interval between the two phases of recording for most of the speakers, allowing for the study of time invariance in speaker recognition.
       Also, we describe the design, creation and license of the dataset, and based on some baseline experiments including speech recognition and speaker recognition, we do some analysis to show the challenges involved in those tasks and inspirations the dataset may provide.<br/><br/></div>
     <h2>目标说话人Ground Truth</h2>
-    <h2>说话人A</h2>
+    <h2>源说话人A</h2>
     <div>Audio samples of both the parallel and non-parallel voice conversion (VC) models trained on the DiDiSpeech corpus are provided here. In the rest of this section, the source and target audio, which has been separated from the training data, is the speech samples recorded from source and target speakers respectively. The converted audio is the speech samples converted from the source audio in the same line by using our VC models.</div>
     <h3></h3>
     <h3>1、口音</h3>
@@ -190,7 +190,169 @@
         <tr height="10px"></tr>
       </table>
     </blockquote>
-    
-    <h2>说话人B</h2>
+    <h2>源说话人B</h2>
+    <h3>1、口音</h3>
+    <blockquote>
+      <table>
+        <tr>
+          <td align=center width=200></td><td align=center width=200>Source audio</td><td align=center width=200>Converted audio</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300>这是我国目前为数不多的国家级相关研究</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_0b0d94a1.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.01.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 中央企业间的横向整合基本完成</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_0c528d0f.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.02.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 万科垦请监管部门对上述情况予以核查</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_220a2442.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.03.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 水面上一块黑乎乎的物体映入眼帘</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_287c109d.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.04.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 另一方面是一种厂商实力的验证手段</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_37b3440f.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.05.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 梁自付的第一个孩子在山洞出生</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_384ccccb.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.06.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 该网站是否安全或保护隐私</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_42368539.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.07.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 那时的我还没有意识到粗犷的真正含义</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_485a21a0.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.08.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 再完成三浪上行到六千三百点左右</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_4a87b8b4.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.09.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 美国经济可能还没有准备好</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_4afafbe3.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.10.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 白银最近的行情一直在下探</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_4c587dce.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.11.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 也祝我们青岛的明天更加美好</td>
+          <td><audio controls><source src="gt/qingdao_1007609/mandarin/eval/1007609_p2_4e93c24c.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_accent_1007609/eval/chengdu_dialect-to-qingdao_accent.12.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+      </table>
+    </blockquote>
+    <h3>2、方言</h3>
+    <blockquote>
+      <table>
+        <tr>
+          <td align=center width=200></td><td align=center width=200>Source audio</td><td align=center width=200>Converted audio</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300>旋即不少游客询问几款电动车的售价</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_135ad4d5.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.01.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 一定要养成绿色生活的日常行为和习惯</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_15b3f3e8.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.02.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 市民盼相关部门能够整治夜市烧烤摊</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_356eb5dd.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.03.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 在原唱者面前唱错歌词又说错歌名</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_49dde8d8.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.04.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 几分钟后接单的司机小王到达现场</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_4f8a9651.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.05.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 我们也不愿意再给他一个机会</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_550c47ed.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.06.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 批判地继承中国古代的传统文化和道德</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_66ec0527.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.07.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 转型乏力等多重因素驱动着纸媒的衰落</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_7df79a92.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.08.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 这些学生大都有很强的独立学习能力</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_9dd36ea9.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.09.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 使得卖萌的戏份更少不了这位小美女</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_b855635e.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.10.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 如果你父亲再满街追着你打</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_bbf420a6.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.11.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300> 耶鲁大学管理学院金融学终身教授陈志武</td>
+          <td><audio controls><source src="gt/qingdao_1007609/dialect/eval/1007609_d10b26f7.wav"></audio></td>
+          <td><audio controls><source src="vc/chengdu_dialect_1024426-to-qingdao_dialect_1007609/eval/chengdu_dialect-to-qingdao_dialect.12.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+      </table>
+    </blockquote>
+
   </body>
 </html>
